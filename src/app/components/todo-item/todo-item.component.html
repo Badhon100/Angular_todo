@@ -1,8 +1,8 @@
-<div class="row ">
-<p class="">
-    <input type="checkbox" >
+<div [ngClass] = "setClasses()">
+<p>
+    <input (change)= "onToggle()" type="checkbox" >
     {{todo.title}}
-    <button class="btn btn-danger">X</button>
+    <button (click) = "onDelete()" class="del btn btn-danger">x</button>
 </p>
 </div>
 
